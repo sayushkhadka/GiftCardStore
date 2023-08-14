@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Schema declaration-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+attributeFormDefault="unqualified" 
+elementFormDefault="qualified">
+
+<!-- main element with child elements-->
+  <xs:element name="stores">
+    <xs:complexType>
+
+      <!-- use of sequence-->
+      <xs:sequence>
+
+        <xs:element name="heading">
+        <xs:complexType>
+        <xs:sequence>
+
+            <!-- empty element logo-->
+            <xs:element name="logo" />
+            <xs:element name="navBar">
+                <xs:complexType>
+                  <xs:sequence>
+                  
+                  <!-- nav element occurs once and more than once-->
+                <xs:element  name="nav" maxOccurs="unbounded" type="xs:string" />
+                </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+
+              <xs:element name="navBar2">
+                <xs:complexType>
+                  <xs:sequence>
+
+                  <!-- empty elements-->
+                    <xs:element name="userImage" />
+                    <xs:element name="cart" />
+                    <xs:element name="bonus" />
+                  </xs:sequence>
+                </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+                </xs:complexType>
+                 </xs:element>
+
+              <!-- store details-->
+              <xs:element name="storeDetails">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="storeName" type="xs:string" />
+                  <xs:element name="storeInfo" type="xs:string" />
+                </xs:sequence>
+              </xs:complexType>
+              </xs:element>
+
+              <!-- store-->
+                  <xs:element name="store">
+                    <xs:complexType>
+                      <xs:sequence>
+
+                      <!-- products-->
+                          <xs:element name="products">
+                            <xs:complexType>
+                                <xs:sequence>
+
+                                <!-- product occurs one or more than once-->
+                            <xs:element name="product" maxOccurs="unbounded" >
+                                <xs:complexType>
+                                    <xs:sequence>
+
+                                      <!-- empty element product image-->
+                                        <xs:element name="productImage" />
+                                        <xs:element name="card">
+                                          <xs:complexType>
+                                                  <xs:sequence>
+                                                        <!-- restriction on product number to be "positiveInterger"-->
+                                                            <xs:element name="productNo" > 
+                                                              <xs:simpleType>
+                                                                <xs:restriction base="xs:positiveInteger">
+                                                                </xs:restriction>
+                                                              </xs:simpleType>
+                                                            </xs:element>
+                                                            <xs:element name="name" type="xs:string" />
+                                                            
+                                                            <!-- restriction given to type of cards-->
+                                                            <xs:element  name="type">
+                                                              <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+
+                                                                <!-- pattern =  "Type : Physical Card|Type : Digital Card"-->
+                                                                    <xs:pattern value="Type : Physical Card|Type : Digital Card"/>
+                                                                </xs:restriction>
+                                                              </xs:simpleType>
+                                                            </xs:element>
+
+                                                            <xs:element name="cost" type="xs:string" />
+
+                                                            <!-- restriction and enumeration for valid time period of the card-->
+                                                            <xs:element name="valid">
+                                                              <xs:simpleType> 
+                                                                <xs:restriction base="xs:string">
+                                                                  <xs:enumeration value="Valid : 1 Month"/>
+                                                                  <xs:enumeration value="Valid : 2 Months"/>
+                                                                  <xs:enumeration value="Valid : 3 Months"/>
+                                                                  <xs:enumeration value="Valid : 4 Months"/>
+                                                                  <xs:enumeration value="Valid : 5 Months"/>
+                                                                  <xs:enumeration value="Valid : 6 months"/>
+                                                                  <xs:enumeration value="Valid : 7 Months"/>
+                                                                  <xs:enumeration value="Valid : 8 Months"/>
+                                                                  <xs:enumeration value="Valid : 9 Months"/>
+                                                                  <xs:enumeration value="Valid : 10 Months"/>
+                                                                  <xs:enumeration value="Valid : 11 Months"/>
+                                                                  <xs:enumeration value="Valid : 12 Months"/>
+                                                                  <xs:enumeration value="Valid : 1 year"/>
+                                                                  <xs:enumeration value="Valid : 2 years"/>
+                                                                  <xs:enumeration value="Valid : always"/>
+                                                                </xs:restriction>
+
+                                                                </xs:simpleType> 
+
+                                                            </xs:element>
+
+                                                            <xs:element  name="numberOfUsers" type="xs:string" />
+                                                            <xs:element name="discount" type="xs:string" />
+
+                                                            <!-- optional datas with minOccurs=0-->
+                                                            <xs:element  name="validGames" type="xs:string" minOccurs="0"/>
+                                                            <xs:element name="offer" type="xs:string" minOccurs="0" />
+                                                            <xs:element  name="validLocation" type="xs:string" minOccurs="0" />
+                                                            <xs:element  name="avialability" type="xs:string" minOccurs="0"/>
+                                                            <xs:element name="shippingCost" type="xs:string" minOccurs="0"/>
+
+                                                  </xs:sequence>
+                                                    </xs:complexType>
+                                                    </xs:element>
+                                                  </xs:sequence>
+
+                                                            <!-- required attribute with type string-->
+                                                            <xs:attribute name="productID" type="xs:string" use="required" />
+                                                            </xs:complexType>
+                                                          </xs:element>
+                                                        </xs:sequence>
+                                                        </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+
+                                                      <!-- required attribute with type string-->
+                                                    <xs:attribute name="storeType" type="xs:string" use="required" />
+                                                  </xs:complexType>
+                                                  </xs:element>
+
+                                                  <!-- contactDetails-->
+                                                  <xs:element name="contactDetails">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+
+                                                  <xs:element name="left">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+
+                                                      <xs:element name="location">
+                                                        <!-- mixed complexType element-->
+                                                        <xs:complexType mixed="true">
+                                                            <xs:sequence>
+
+                                                              <xs:element name="details">
+                                                                 <xs:complexType>
+                                                                   <!-- optional attribute with default value as "Location: London"-->
+                                                                    <xs:attribute name="location" type="xs:string" default="Location: London" use="optional" />
+                                                                      </xs:complexType>
+                                                                        </xs:element>
+                                                                       </xs:sequence>
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+
+                                                                  <xs:element name="website">
+                                                                    <!-- mixed complexType element-->
+                                                                  <xs:complexType mixed="true">
+                                                                  <xs:sequence>
+                                                                    <xs:element name="details">
+                                                                    <xs:complexType>
+
+                                                                      <!-- required attribute with type string-->
+                                                                        <xs:attribute name="website" type="xs:string" use="required" />
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+                                                                        
+                                                                  
+                                                              </xs:sequence>
+                                                                </xs:complexType>
+                                                                    </xs:element>
+
+                                                                <xs:element name="phone">
+                                                                        <!-- mixed complexType element-->
+                                                                        <xs:complexType mixed="true">
+                                                                        <xs:sequence>
+                                                                          <xs:element name="details">
+                                                                            <xs:complexType>
+
+                                                                           <!-- optional attribute with deafault value as "Telephone: +449801329901"-->
+                                                                          <xs:attribute name="phone" type="xs:string" default="Telephone: +449801329901" use="optional" />
+                                                                         </xs:complexType>
+                                                                      </xs:element>
+                                                                  </xs:sequence>
+                                                                </xs:complexType>
+                                                            </xs:element>
+                                                      </xs:sequence>
+                                                        </xs:complexType>
+                                                              </xs:element>
+
+
+                                                              <xs:element name="right">
+                                                          <xs:complexType>
+                                                       <xs:sequence>
+
+                                                 <!-- contacts-->
+                                                  <xs:element name="contacts">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+
+                                                                              
+                                                        <xs:element name="connect" type="xs:string" />
+                                                         <!-- contact occurs once or more than once-->
+                                                          <xs:element  name="contact" minOccurs="1" maxOccurs="unbounded">
+                                                          <xs:complexType>
+                                                          <!-- required atrribute with string type-->
+                                                          <xs:attribute name="type" type="xs:string" use="required" />
+                                                  </xs:complexType>
+                                          </xs:element>
+                                            </xs:sequence>
+                                          </xs:complexType>
+                                    </xs:element>
+                                      </xs:sequence>
+                                      </xs:complexType>
+                                    </xs:element>
+                                  </xs:sequence>
+                            </xs:complexType>
+                              </xs:element>
+                            </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                      </xs:schema>

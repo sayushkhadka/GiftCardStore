@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- css link-->
+<?xml-stylesheet href="./catalog_20049034.css" type="text/css"?>
+
+<!-- Schema link-->
+<stores xsi:noNamespaceSchemaLocation="catalog_20049034.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!-- heading -->
+    <heading>
+    <!-- logo of the store-->
+        <logo/>
+        <!-- navigation bar-->
+        <navBar>
+            <!-- navigation contents-->
+            <nav>Home nez</nav>
+            <nav>Buy with nez</nav>
+            <nav>Connect with nez</nav>
+        </navBar>
+
+        <!-- second navigation bar for userImage,cart and bonus icon-->
+        <navBar2>
+                <userImage/>
+                <cart/>
+                <bonus/>
+        </navBar2>
+
+    </heading>
+
+    <!-- details of the store-->
+    <storeDetails>
+        
+            <storeName>nez</storeName>
+            <storeInfo>
+                Purchase gift cards for the perfect gift for yourself and for the people you care.
+            </storeInfo>
+        
+    </storeDetails>
+
+    <!-- store with attribute "giftcards"-->
+    <store storeType="giftcards">
+
+        <!-- products of the store-->
+        <products>
+
+            <!-- list of products in the store with their attribute-->
+            <product productID="product1">
+                <!-- product image-->
+                <productImage/>
+                <!-- product description-->
+                <card>
+                    <productNo>1</productNo>
+                    <name>Name : Netflix Gift Card</name>
+                    <type>Type : Physical Card</type>
+                    <cost>Price : $ 30</cost>
+                    <valid>Valid : 1 Month</valid>
+                    <numberOfUsers>Number of Users: 50</numberOfUsers>
+                    <discount>Discount : $ 5</discount>
+                </card>
+            </product>
+
+            <product productID="product2">
+                <productImage/>
+                <card>
+                    <productNo>2</productNo>
+                    <name>Name : Google Gift Card</name>
+                    <type>Type : Physical Card</type>
+                    <cost>Price : $ 100</cost>
+                    <valid>Valid : 3 Months</valid>
+                    <numberOfUsers>Number of Users: 30</numberOfUsers>
+                    <discount>Discount : $ 10</discount>
+                    <shippingCost>Shipping Cost: $10</shippingCost>
+                </card>
+            </product>
+
+            <product productID="product3">
+                <productImage/>
+                <card>
+                    <productNo>3</productNo>
+                    <name>Name : Amazon Gift Card</name>
+                    <type>Type : Digital Card</type>
+                    <cost>Price : $ 500</cost>
+                    <valid>Valid : 2 years</valid>
+                    <numberOfUsers>Number of Users: 10</numberOfUsers>
+                    <discount>Discount : $50</discount>
+                    <avialability>Avialability : 3 left only</avialability>
+                </card>
+            </product>
+
+            <product productID="product4">
+                <productImage/>
+                <card>
+                    <productNo>4</productNo>
+                    <name>Name : Spotify Gift Card</name>
+                    <type>Type : Digital Card</type>
+                    <cost>Price : $ 99</cost>
+                    <valid>Valid : 12 Months</valid>
+                    <numberOfUsers>Number of Users: 40</numberOfUsers>
+                    <discount>Discount : $ 20</discount>
+                </card>
+            </product>
+
+            <product productID="product5">
+                <productImage/>
+                <card>
+                    <productNo>5</productNo>
+                    <name>Name : Apple Gift Card</name>
+                    <type>Type : Physical Card</type>
+                    <cost>Price : $ 50</cost>
+                    <valid>Valid : 2 Months</valid>
+                    <numberOfUsers>Number of Users: 20</numberOfUsers>
+                    <discount>Discount : n/a</discount>
+                    <avialability>Avialability : 2 left only</avialability>
+                </card>
+            </product>
+
+            <product productID="product6">
+                <productImage/>
+                <card>
+                    <productNo>6</productNo>
+                    <name>Name : Xbox Gift Card</name>
+                    <type>Type : Digital Card</type>
+                    <cost>Price : $ 25</cost>
+                    <valid>Valid : 1 Month</valid>
+                    <numberOfUsers>Number of Users: 13</numberOfUsers>
+                    <discount>Discount : n/a</discount>
+                </card>
+            </product>
+
+            <product productID="product7">
+                <productImage/>
+                <card>
+                    <productNo>7</productNo>
+                    <name>Name : Play Station Card</name>
+                    <type>Type : Digital Card</type>
+                    <cost>Price : $ 50</cost>
+                    <valid>Valid : 3 Months</valid>
+                    <numberOfUsers>Number of Users: 19</numberOfUsers>
+                    <discount>Discount : n/a</discount>
+                </card>
+            </product>
+
+            <product productID="product8">
+                <productImage/>
+                <card>
+                    <productNo>8</productNo>
+                    <name>Name : PUBG UC Card</name>
+                    <type>Type : Digital Card</type>
+                    <cost>Price : $ 15</cost>
+                    <valid>Valid : always</valid>
+                    <numberOfUsers>Number of Users: 55</numberOfUsers>
+                    <discount>Discount : n/a</discount>
+                    <validLocation>Valid Location : Nepal and India only.</validLocation>
+                </card>
+            </product>
+
+            <product productID="product9">
+                <productImage/>
+                <card>
+                    <productNo>9</productNo>
+                    <name>Name : Hulu Gift Card</name>
+                    <type>Type : Digital Card</type>
+                    <cost>Price : $ 100</cost>
+                    <valid>Valid : 4 Months</valid>
+                    <numberOfUsers>Number of Users: 4</numberOfUsers>
+                    <discount>Discount : $ 10</discount>
+                </card>
+            </product>
+
+            <product productID="product10">
+                <productImage/>
+                <card>
+                    <productNo>10</productNo>
+                    <name>Name : Razer Gift Card</name>
+                    <type>Type : Physical Card</type>
+                    <cost>Price : $ 200</cost>
+                    <valid>Valid : 6 months</valid>
+                    <numberOfUsers>Number of Users: 5</numberOfUsers>
+                    <discount>Discount : n/a</discount>
+                    <shippingCost>Shipping Cost: $10</shippingCost>
+                </card>
+            </product>
+
+            <product productID="product11">
+                <productImage/>
+                <card>
+                    <productNo>11</productNo>
+                    <name>Name : Discord Nitro Card</name>
+                    <type>Type : Digital Card</type>
+                    <cost>Price : $ 10</cost>
+                    <valid>Valid : 1 Month</valid>
+                    <numberOfUsers>Number of Users: 22</numberOfUsers>
+                    <discount>Discount : n/a</discount>
+                </card>
+            </product>
+
+            <product productID="product12">
+                <productImage/>
+                <card>
+                    <productNo>12</productNo>
+                    <name>Name : Apple Msuic Card</name>
+                    <type>Type : Digital Card</type>
+                    <cost>Price : $ 90</cost>
+                    <valid>Valid : 12 Months</valid>
+                    <numberOfUsers>Number of Users: 19</numberOfUsers>
+                    <discount>Discount : $ 10</discount>
+                    <offer>Offer: Any 1 extra album free.</offer>
+                </card>
+            </product>
+
+            <product productID="product13">
+                <productImage/>
+                <card>
+                    <productNo>13</productNo>
+                    <name>Name : Steam Gift Card</name>
+                    <type>Type : Digital Card</type>
+                    <cost>Price : $ 100</cost>
+                    <valid>Valid : 12 Months</valid>
+                    <numberOfUsers>Number of Users: 33</numberOfUsers>
+                    <discount>Discount : $ 10</discount>
+                    <validGames>Valid Games: Games above $40.</validGames>
+                </card>
+            </product>
+
+            <product productID="product14">
+                <productImage/>
+                <card>
+                    <productNo>14</productNo>
+                    <name>Name : Twitch Gift Card</name>
+                    <type>Type : Physical Card</type>
+                    <cost>Price : $ 25</cost>
+                    <valid>Valid : 2 Months</valid>
+                    <numberOfUsers>Number of Users: 7</numberOfUsers>
+                    <discount>Discount : n/a</discount>
+                </card>
+            </product>
+
+            <product productID="product15">
+                <productImage/>
+                <card>
+                    <productNo>15</productNo>
+                    <name>Name : CSGO.net Gift Card</name>
+                    <type>Type : Physical Card</type>
+                    <cost>Price : $ 20</cost>
+                    <valid>Valid : 2 Months</valid>
+                    <numberOfUsers>Number of Users: 35</numberOfUsers>
+                    <discount>Discount : n/a</discount>
+                </card>
+            </product>
+
+        </products>
+    </store>
+
+    <!-- contact deatils of the store-->
+    <contactDetails>
+        <left>
+
+            <!-- location of the store -->
+            <location>
+                <details location="location" />Location: London
+            </location>
+            <!-- website of the store-->
+            <website>
+                <details website="website" />Website: nezofficial.com
+            </website>
+            <!-- phone number of the store-->
+            <phone>
+                <details phone="phone" />Telephone: +449801329901
+            </phone>
+
+        </left>
+        
+        <right>
+            <!-- contact details of the store on the social medias-->
+            <contacts>
+                <connect>Connect with us on:</connect>
+                    <contact type="facebook"/>
+                    <contact type="twitter"/>
+                    <contact type="instagram"/>
+            </contacts>
+
+        </right>
+        
+    </contactDetails>
+
+</stores>
